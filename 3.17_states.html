@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tak Time</title>
+    <style>
+        body {
+            height: 1000vh;
+            margin: 50px;
+        }
+
+        button:active{background-color: tomato;}
+        
+        button:nth-child(2):hover{background-color: wheat;}
+
+        input:focus{background-color: tomato;}
+
+        a:visited{color: yellowgreen;}
+        
+        form{
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            
+        }
+        /* 폼안에 있는 인풋박스 클릭시 폼전체 보더의 색상이 바뀜 */
+        form:focus-within {
+            border-width : 20px;
+            border-color: seagreen;
+        }
+        form:focus-within input:focus{background-color: skyblue;}
+    </style>
+</head>
+
+<body>
+    <div>
+        <button>hello</button>
+        <button>hello</button>
+    </div>
+    <div>
+        <input type="text">
+        <input type="text">
+    </div>
+    <a href="http://www.naver.com"> go to naver</a>
+    <div>
+        <form action="">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body{
+  height: 100vh;
+  background-color: #6bbcbe;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: column;
+}
+@keyframes superAniCircle{
+  from{transform: rotateZ(0deg);}
+  to{transform: rotateZ(180deg);}
+}
+@keyframes superAniBar{
+  0%{transform: scaleY(1);}
+  20%{transform: scaleY(2);}
+  40%{transform: scaleY(1);}   
+}
+.wrap_circles{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  animation: superAniCircle 1s ease-in-out infinite;
+}
+.circles{
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin: 30px;
+  border-radius: 50%;
+  
+}
+.wrap_bars{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+.bars{
+  width: 20px; 
+  height: 70px; 
+  background-color: #fff;
+  margin: 6px;
+  animation: superAniBar 1s ease-in-out infinite;
+}
+.bars:nth-child(1){ 
+  animation-delay: 0.1s;
+}
+.bars:nth-child(2){ 
+  animation-delay: 0.2s;
+}
+.bars:nth-child(3){ 
+  animation-delay: 0.3s;
+}
+.bars:nth-child(4){ 
+  animation-delay: 0.4s;
+}
+.bars:nth-child(5){ 
+  animation-delay: 0.5s;
+}

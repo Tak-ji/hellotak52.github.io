@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tak Time</title>
+    <style>
+        body {
+            height: 100vh; 
+            /* vh=viewport height */
+            margin: 20px;
+            display: flex;
+            justify-content: space-between; /* 가로 */
+            align-items: center;/* 세로 */
+            /* 
+            //부모에 명력을 해야 적용됨
+            //센터는 모든div가 가운데
+            //justify-content 가로로 박스를 조정할때 (기본값은 flex-start)  
+            //align-items 세로로 박스를 조정할때
+            */
+            flex-direction: row; 
+            /* flex-direction이 column이 이면 주축(justify-content)은 수직이되고 교차축(align-items)은 수평이됨
+            row면 반대*/
+            flex-wrap:wrap;
+            /* 자리가 모자라면 아래로 내려감 */
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            font-size: 20px;
+            color: white;
+            height: 300px;
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div>1</div>
+    <div style="background-color: wheat;">2</div>
+    <div>3</div>
+</body>
+
+</html>

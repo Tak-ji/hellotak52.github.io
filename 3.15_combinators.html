@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tak Time</title>
+  <style>
+    body {
+      height: 1000vh;
+      margin: 50px;
+    }
+
+    span {
+      background-color: yellowgreen;
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    p span {
+      color: white;
+    }
+
+    /* 바로 아래자식 */
+    div>span {
+      text-decoration: underline;
+    }
+
+    /* 형제지만  건너띄어서*/
+    p~span {
+      color: blue;
+    }
+
+    /* 형제 바로 뒤 */
+    p+span {
+      color: violet;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <span>hello</span>
+    <p>Lorem ipsum dolor sit amet cosecterur adipisicing elit. Quod commodi esequi ipsam odio dolorem.
+      <span>inside</span>
+    </p>
+    <span>violet</span>
+  </div>
+  <div style="margin-top: 50px;">
+    <span>hello</span>
+    <p>Lorem ipsum dolor sit amet cosecterur adipisicing elit. Quod commodi esequi ipsam odio dolorem.
+      <span>inside</span>
+    </p>
+    <address>address</address>
+    <span>blue</span>
+  </div>
+</body>
+
+</html>
